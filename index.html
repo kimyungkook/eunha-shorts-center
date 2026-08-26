@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eunha Shorts Center — Schedule and publish your short videos to TikTok</title>
+<meta name="description" content="Eunha Shorts Center is a desktop scheduling tool for short-form video creators. Connect your TikTok account, review the title, hashtags and privacy level, and publish on your own timetable.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="logo"></span>Eunha Shorts Center</a>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Publish your short videos to TikTok<br>on a schedule you control.</h1>
+    <p class="lede">Eunha Shorts Center is a desktop application for short-form video creators.
+      It watches a folder on your computer, drafts a title and hashtags for every new video,
+      and posts each one to your own TikTok account at the time you choose — after you have
+      reviewed and confirmed it.</p>
+    <p class="lede" style="font-size:16px">Windows · Free · Runs entirely on your own computer.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section>
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Connect your account</h3>
+        <p>Sign in through TikTok Login Kit. The app never sees or stores your TikTok password —
+          only an access token, kept on your own computer.</p>
+      </div>
+      <div class="card">
+        <h3>Draft and review</h3>
+        <p>Drop a finished video into your folder. The app proposes a title and hashtags,
+          shows the video, and waits for you to approve.</p>
+      </div>
+      <div class="card">
+        <h3>Choose the privacy level</h3>
+        <p>Privacy options come from TikTok's Creator Info endpoint, so you only ever see the
+          settings your own account actually allows.</p>
+      </div>
+      <div class="card">
+        <h3>Publish on a timetable</h3>
+        <p>Set the times of day you want to post. The app publishes at those times and records
+          the result so you can see what went out.</p>
+      </div>
+      <div class="card">
+        <h3>Disclose commercial content</h3>
+        <p>Branded-content and paid-partnership toggles are shown before every post and sent to
+          TikTok exactly as you set them.</p>
+      </div>
+      <div class="card">
+        <h3>Track your own numbers</h3>
+        <p>Followers, total views, likes and comments for your own videos are collected twice a
+          day and charted in one dashboard.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Inside the app</h2>
+
+    <figure>
+      <img src="img/screen-connect.jpg" alt="The dashboard showing a connected TikTok account and the list of videos ready to publish.">
+      <figcaption>Your connected TikTok account is shown at the top. Pick any video from your folder.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/screen-review.jpg" alt="The review screen with privacy level, interaction toggles, commercial content disclosure and the consent checkbox.">
+      <figcaption>Privacy level, interaction settings, commercial-content disclosure and a final
+        consent checkbox. Nothing is sent to TikTok until this is confirmed.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/screen-result.jpg" alt="The dashboard confirming that the post completed, with the publish ID returned by TikTok.">
+      <figcaption>After publishing, the app polls TikTok until the post completes and records the
+        publish ID.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Built on TikTok's official APIs</h2>
+    <div class="tablewrap">
+      <table class="kv">
+        <tr><th>Login Kit</th><td>Sign-in and account connection using OAuth 2.0 with PKCE.</td></tr>
+        <tr><th>Content Posting API</th><td>Direct Post. The video file is uploaded from your
+          computer, and the app polls the status endpoint until TikTok reports the post is
+          complete.</td></tr>
+        <tr><th>Display API</th><td>Reads your own account statistics and your own video list to
+          build the performance dashboard.</td></tr>
+      </table>
+    </div>
+    <p class="note">Every post requires an explicit confirmation from the account owner. The app
+      does not post on its own, does not touch anyone else's account, and does not share your data
+      with any third party.</p>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <h3>Where does my data live?</h3>
+    <p>On your computer. Video files, access tokens and collected statistics are stored in a local
+      folder and a local database file. Nothing is uploaded to a server we control.</p>
+    <h3>Can I stop using it?</h3>
+    <p>Yes. Remove the app's access from your TikTok account settings and delete the app's folder.
+      That removes everything.</p>
+    <h3>What does it cost?</h3>
+    <p>Nothing. It is a free tool.</p>
+    <p style="margin-top:22px">More answers are on the <a href="support.html">Support</a> page.</p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fnav">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>Contact: <a href="mailto:scfjhk7302@gmail.com">scfjhk7302@gmail.com</a></p>
+    <p>Eunha Shorts Center is an independent tool and is not affiliated with, endorsed by, or
+      sponsored by TikTok or ByteDance.</p>
+  </div>
+</footer>
+
+</body>
+</html>

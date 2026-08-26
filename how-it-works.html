@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How it works — Eunha Shorts Center</title>
+<meta name="description" content="Step by step: connect your TikTok account, add a video, review the post, choose the privacy level, publish, and check the result.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="logo"></span>Eunha Shorts Center</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html" aria-current="page">How it works</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>How it works</h1>
+    <p class="lede">From an empty folder to a published post, in six steps.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section>
+    <h2>The flow</h2>
+    <ol class="steps">
+      <li><strong>Connect your TikTok account</strong>
+        <span>Open the dashboard and click Connect. TikTok's own authorization page opens in your
+        browser, lists the permissions being requested, and you approve or cancel. On approval the
+        app receives an access token and shows your handle.</span></li>
+
+      <li><strong>Put a finished video in your folder</strong>
+        <span>Any MP4, MOV, MKV, AVI or WebM file. The app notices it within a minute.</span></li>
+
+      <li><strong>Review the draft</strong>
+        <span>The app proposes a title and hashtags and plays the video back so you can check you
+        picked the right file. Edit anything you want to change.</span></li>
+
+      <li><strong>Choose the privacy level</strong>
+        <span>The list is fetched from your own account, so you only see options TikTok allows for
+        you. Set comments, Duet and Stitch here too, and mark the post if it is branded content or a
+        paid partnership.</span></li>
+
+      <li><strong>Confirm and publish</strong>
+        <span>Tick the final consent box and press publish. The app uploads the file to TikTok and
+        then polls the status endpoint until TikTok reports the post is complete.</span></li>
+
+      <li><strong>Check the result</strong>
+        <span>The dashboard shows the publish ID and marks the job complete. If TikTok returns an
+        error, the reason is shown in plain language along with what to do about it.</span></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Scheduling instead of publishing now</h2>
+    <p>Steps 3 to 6 can run on a timetable. You set the times of day you want to post — for example
+      19:00 and 22:00 — and each new video is assigned to the next free slot. A background worker
+      publishes what is due at those times. You can move a video to the front of the queue, change a
+      slot, or cancel a queued post at any point before it goes out.</p>
+    <p>The worker starts automatically a few minutes after you log in to your computer, so the
+      schedule keeps running without you opening anything.</p>
+  </section>
+
+  <section>
+    <h2>What happens when something fails</h2>
+    <p>Network problems and temporary TikTok errors are retried a few times with a growing delay.
+      Errors that will not fix themselves — an expired token, a file that is too long for your
+      account, a permission that has not been granted — stop the job and are shown on the dashboard
+      with the specific step to take.</p>
+    <p>A failed post is never silently retried into a duplicate. The app tracks which files have
+      already been published and skips them.</p>
+  </section>
+
+  <section>
+    <h2>Requirements</h2>
+    <div class="tablewrap">
+      <table class="kv">
+        <tr><th>Operating system</th><td>Windows 10 or 11</td></tr>
+        <tr><th>Runtime</th><td>Python 3.12 (installed once, during setup)</td></tr>
+        <tr><th>Account</th><td>A TikTok account you own</td></tr>
+        <tr><th>Network</th><td>An internet connection at the times you publish</td></tr>
+      </table>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fnav">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>Contact: <a href="mailto:scfjhk7302@gmail.com">scfjhk7302@gmail.com</a></p>
+    <p>Eunha Shorts Center is an independent tool and is not affiliated with, endorsed by, or
+      sponsored by TikTok or ByteDance.</p>
+  </div>
+</footer>
+
+</body>
+</html>

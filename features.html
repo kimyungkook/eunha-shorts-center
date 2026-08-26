@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Features — Eunha Shorts Center</title>
+<meta name="description" content="What Eunha Shorts Center does: account connection, metadata drafting, privacy control, scheduled publishing, commercial content disclosure and performance tracking.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="logo"></span>Eunha Shorts Center</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="features.html" aria-current="page">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Features</h1>
+    <p class="lede">Everything the app does, and exactly which TikTok API each part uses.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section>
+    <h2>Account connection</h2>
+    <p>You connect your TikTok account through <strong>Login Kit</strong>. The app opens TikTok's own
+      authorization page in your browser and receives an access token back through a local callback
+      address. Authorization uses OAuth 2.0 with PKCE.</p>
+    <p>The app requests four scopes:</p>
+    <div class="tablewrap">
+      <table class="kv">
+        <tr><th>user.info.basic</th><td>Your open ID and display name, so the dashboard can show which
+          account is connected and attach each upload to the right account.</td></tr>
+        <tr><th>user.info.stats</th><td>Follower count, total likes and video count, for your growth
+          chart.</td></tr>
+        <tr><th>video.list</th><td>Your own videos and their view, like and comment counts, for the
+          per-video performance table.</td></tr>
+        <tr><th>video.publish</th><td>Publishing a video to your own profile through Direct Post.</td></tr>
+      </table>
+    </div>
+    <p>Your TikTok password is never entered into the app and is never stored. Only the access token
+      is kept, in a file on your own computer.</p>
+  </section>
+
+  <section>
+    <h2>Title and hashtag drafting</h2>
+    <p>When a new video file appears in your folder, the app generates a draft title and a set of
+      hashtags from the file name and rotates between several opening hooks so your posts do not all
+      read the same way. The draft is a starting point — you can edit both before publishing.</p>
+  </section>
+
+  <section>
+    <h2>Privacy level, taken from your account</h2>
+    <p>Before showing you the publish form, the app calls TikTok's <strong>Creator Info</strong>
+      endpoint and offers only the privacy options that TikTok reports for your account. You choose
+      the level for every post. There is no default that publishes without you selecting one.</p>
+  </section>
+
+  <section>
+    <h2>Interaction and commercial content settings</h2>
+    <p>Comments, Duet and Stitch can each be enabled or disabled per post. If a video is branded
+      content or a paid partnership, you mark it, and the app passes the disclosure flags to TikTok
+      exactly as you set them. TikTok's own rule — that paid-partnership content must be public — is
+      shown next to the toggles.</p>
+  </section>
+
+  <section>
+    <h2>Scheduled publishing</h2>
+    <p>You set the times of day you want to post, for example 19:00 and 22:00. New videos are queued
+      into the next free slot. A background worker checks the queue, publishes what is due through
+      the <strong>Content Posting API</strong>, then polls the status endpoint until TikTok confirms
+      the post is complete. Both success and failure are written to a log you can read.</p>
+    <p>Publishing is rate-limited by the app itself so it stays inside TikTok's request limits.</p>
+  </section>
+
+  <section>
+    <h2>Performance dashboard</h2>
+    <p>Twice a day the app reads your own account statistics and your own video list through the
+      <strong>Display API</strong> and stores them locally. The dashboard charts followers, views,
+      likes and comments over time so you can see which posting times work.</p>
+    <p>Only your own account is ever read. The app has no way to look at anyone else's data.</p>
+  </section>
+
+  <section>
+    <h2>Notifications</h2>
+    <p>Optionally, the app can send you a message when a video is queued, published, or fails. This
+      is off unless you turn it on and supply your own notification token.</p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fnav">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p>Contact: <a href="mailto:scfjhk7302@gmail.com">scfjhk7302@gmail.com</a></p>
+    <p>Eunha Shorts Center is an independent tool and is not affiliated with, endorsed by, or
+      sponsored by TikTok or ByteDance.</p>
+  </div>
+</footer>
+
+</body>
+</html>
