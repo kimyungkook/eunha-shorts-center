@@ -17,7 +17,7 @@ img{max-width:100%;height:auto;display:block}
 header{border-bottom:1px solid var(--line);background:var(--bg)}
 .bar{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:14px 0}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.2px;text-decoration:none;color:var(--ink);font-size:17px}
-.logo{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#0f5fd8,#28c5a8);flex:none}
+.logo{width:30px;height:30px;border-radius:8px;flex:none;display:block}
 nav{display:flex;flex-wrap:wrap;gap:6px 16px;margin-left:auto}
 nav a{color:var(--muted);text-decoration:none;font-size:14.5px;white-space:nowrap}
 nav a:hover,nav a[aria-current="page"]{color:var(--brand)}
@@ -31,6 +31,13 @@ h3{font-size:17px;margin:24px 0 6px}
 p{margin:0 0 14px}
 section{padding:34px 0}
 section+section{border-top:1px solid var(--line)}
+
+/* 홈 상단의 앱 아이덴티티 블록. 틱톡에 제출한 앱 아이콘과 같은 그림을 크게 보여준다. */
+.appid{display:flex;align-items:center;gap:16px;margin:26px 0 0;padding:16px 18px;
+  border:1px solid var(--line);border-radius:14px;background:var(--soft);max-width:420px}
+.appid img{border-radius:18px;flex:none}
+.appid strong{display:block;font-size:16px}
+.appid span{display:block;color:var(--muted);font-size:14px;margin-top:2px}
 
 .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin:18px 0 0}
 .card{border:1px solid var(--line);border-radius:12px;padding:18px 18px 20px;background:var(--soft)}
